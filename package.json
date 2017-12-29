@@ -1,0 +1,22 @@
+{
+  "name": "pandoodle-dolo-extractor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:loc-ea/pandoodle-dolo-extractor.git",
+  "author": "Loc Le <loc.le@eastagile.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "test": "eslint . && mocha --exit"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.1.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.14.0",
+    "mocha": "^4.1.0"
+  }
+}
