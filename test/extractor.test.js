@@ -6,3 +6,8 @@ it('should return a list of 5 keywords', () => {
   expect(keywords).to.have.lengthOf(5);
   expect(keywords).to.have.same.members(['마시', '맥주', '알코올', '조절', '체온']);
 });
+
+it('should return empty list if the input is null or empty string or empty list', () => {
+  expect(extractKeywords(null)).to.have.lengthOf(0);
+  expect(extractKeywords({})).to.have.lengthOf(0);
+});

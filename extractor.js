@@ -1,6 +1,7 @@
 const keywordExtractor = require("keyword-extractor-korean");
 
 const extractKeywords = (text) => {
+  text = typeof text === 'string' ? text : '';
   const extractor = keywordExtractor();
   const keywords = extractor(text);
   // Sort keywords by values
